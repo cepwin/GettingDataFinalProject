@@ -1,4 +1,4 @@
-# GettingDataFinalProject
+# Getting Data Final Project
 
 In this project I took the dataset "Human Activity Recognition Using Smartphones Dataset" and performed an analysis taking the provided
 data and turning it into a tidy dataset that contains five columns, the subject (a number representing the subject) and activity, the measurement coming from the the accelerometer and gyroscople as specified in that dataset, the mean of the means of that measurement and the mean of the Standard Devidatons of that measumrement.   NOTE: I *did not* include meanFreq in my analysis.  These are not the mean or std of a specific measumrement but a separate item and do not include a corressponding Standard Deviation (std)
