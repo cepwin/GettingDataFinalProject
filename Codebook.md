@@ -7,8 +7,16 @@ output: html_document
 
 # Codebook for Final Data Project
 
+##Introduction
+This codebook is intended to suppliment the codebook information at the links below.
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+and at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
+
+In this codebook I will describe the analytical decsions I made and the data points included in the data.
+
+
 ##Analytical Decisions
-Given the definition of the problem (mean of means and stds) I determined that the best shape of the data was for each independent measurement of a particular subject performing a particular activity I would have two variables, the mean of the means and the mean of the standard deviations.  Thus for each independent measurement the two datapoints would be the variables provided.
+Given the definition of the problem (mean of means and stds) I determined that the best shape of the data was for each independent measurement of a particular subject performing a particular activity I would have two variables, the mean of the means and the mean of the standard deviations.  Thus for each independent measurement the two datapoints would be the variables provided.  
 The second important decision was which columns to include.   I chose to include the columns that were the means and the standard deviations of the raw data.  These are designated in the original data with the _mean() or _std() in the feature label.
 
 ##Codebook
@@ -61,8 +69,7 @@ The second important decision was which columns to include.   I chose to include
 "tGravityAcc-Z"        
 "tGravityAccMag"      
 
-NOTE: the full explanation of these measurements can be found in the features_info.txt file in the original data set [link]https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-and at [link]http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+NOTE: the full explanation of these measurements can be found in the features_info.txt file in the original data set. 
 
 ###mean of means: The mean of the mean values for the particular measurement - floating point number  -1.000000:1.000000
 ###mean of stds: The mean of the standard deviation values for that particular measurement - floating point number  -1.000000:1.000000 
