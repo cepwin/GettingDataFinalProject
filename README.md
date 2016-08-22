@@ -26,6 +26,11 @@ This is a single type of observational unit, the data coming from the smartphone
 
 NOTE:  I did not go pure skinny (activity, subject, measumrent, value) or pure wide (activity, subject and a column for each measurement) as I felt the goal of this analysis is is the mean of means and mean of std's for each measument and thus I felt the resulting table I made would be easier to perform additional analysis on while still being tidy.   
  
+##Files included
+*run_analysis.R - the script file
+*Codebook.md - the codebook
+
+
 ##Dependencies
 
 library - tidyr, dplyr  
