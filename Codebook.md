@@ -3,26 +3,63 @@ title: "Codebook"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Codebook for Final Data Project
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+##Analytical Decisions
+Given the definition of the problem (mean of means and stds) I determined that the best shape of the data was for each independent measurement of a particular subject performing a particular activity I would have two variables, the mean of the means and the mean of the standard deviations.  Thus for each independent measurement the two datapoints would be the variables provided.
 
-```{r cars}
-summary(cars)
-```
+##Codebook
 
-## Including Plots
+###Activity: This is the activity that was involved when the measurement was made
+  *Possible Values:  
+    WALKING  
+    WALKING_UPSTARES  
+    WALKING_DOWNSTARES  
+    SITTING  
+    STANDING  
+    LAYING  
 
-You can also embed plots, for example:
+###Subject: This is the subject being measured  
+  numeric: 1:20  
+    
+###measurement: the measurements coming off the instruments  
+*Possible values:  
+"fBodyAcc-X"
+"fBodyAcc-Y"           
+"fBodyAcc-Z"           
+"fBodyAccJerk-X"       
+"fBodyAccJerk-Y"       
+"fBodyAccJerk-Z"       
+"fBodyAccMag"         
+"fBodyBodyAccJerkMag"  
+"fBodyBodyGyroJerkMag" 
+"fBodyBodyGyroMag"     
+"fBodyGyro-X"          
+"fBodyGyro-Y"          
+"fBodyGyro-Z"          
+"tBodyAcc-X"          
+"tBodyAcc-Y"           
+"tBodyAcc-Z"           
+"tBodyAccJerk-X"       
+"tBodyAccJerk-Y"       
+"tBodyAccJerk-Z"       
+"tBodyAccJerkMag"      
+"tBodyAccMag"         
+"tBodyGyro-X"          
+"tBodyGyro-Y"          
+"tBodyGyro-Z"          
+"tBodyGyroJerk-X"      
+"tBodyGyroJerk-Y"      
+"tBodyGyroJerk-Z"      
+"tBodyGyroJerkMag"    
+"tBodyGyroMag"         
+"tGravityAcc-X"        
+"tGravityAcc-Y"        
+"tGravityAcc-Z"        
+"tGravityAccMag"      
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+###mean of means: The mean of the mean values for the particular measurement - floating point number  
+###mean of stds: The mean of the standard deviation values for that particular measurement - floating point number  
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
