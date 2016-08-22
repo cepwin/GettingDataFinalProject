@@ -16,9 +16,11 @@ In this codebook I will describe the analytical decsions I made and the data poi
 
 
 ##Analytical Decisions
-Given the definition of the problem (mean of means and stds) I determined that the best shape of the data was for each independent measurement of a particular subject performing a particular activity I would have two variables, the mean of the means and the mean of the standard deviations.  Thus for each independent measurement the two datapoints would be the variables provided.  
-The second important decision was which columns to include.   I chose to include the columns that were the means and the standard deviations of the raw data.  These are designated in the original data with the _mean() or _std() in the feature label.
+The firstimportant decision was which columns to include.   I chose to include the columns that were the means and the standard deviations of the raw data.  These are designated in the original data with the _mean() or _std() in the feature label.  This was for two reasons, first these measurements are in pairs..ie. every measurement _mean() has a corresponding _std(). Second they are calcluated based on the sensor readings and do not involve any other processing (ie. like meanFreq)  
+  
 
+Second I had to determine the data shape. Given the definition of the problem (mean of means and stds) I determined that the best shape of the data was for each independent measurement of a particular subject performing a particular activity I would have two variables, the mean of the means and the mean of the standard deviations.  Thus for each independent measurement the two datapoints would be the variables provided.    
+ 
 ##Codebook
 
 ###Activity: This is the activity that was involved when the measurement was made
@@ -34,6 +36,8 @@ The second important decision was which columns to include.   I chose to include
   numeric: 1:20  
     
 ###measurement: the measurements coming off the instruments  
+
+These were derived by changing the values that had mean() or std() and removing mean/std and putting in a separate column that was reshaped to create the final data set. For example "fBodyAcc-mean()-X" became "fBodyAcc-X" and "mean" was moved to a separate column (actually "mean of means")
 *Possible values:  
 "fBodyAcc-X"
 "fBodyAcc-Y"           
