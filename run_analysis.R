@@ -73,7 +73,7 @@ run_analysis<-function() {
  meansRes<-spread(meansRes,type,value)
  
  ##write out the table
- write.table(meansRes,file="tidy_sensor.txt")
+ write.table(meansRes,file="tidy_sensor.txt", row.names = FALSE)
 
   meansRes
 }
